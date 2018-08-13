@@ -1,0 +1,209 @@
+@font-face {
+    font-family: boxOnBox;
+    src: url(https://liamebirge.github.io/Fonts/BOXONBOX.TTF);
+
+    font-family: dopeStyle;
+    src: url(https://liamebirge.github.io/Fonts/Dopestyle.TTF);
+}
+body{
+	min-width: 730px;
+	font-family: helvetica, decorative;
+}
+header{
+	text-align: center;
+}
+#headerBttns{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+#headerBttns a, #headerBttns a:visited{
+	width:30%;
+	border:1px solid black;
+	border-bottom: none;
+	border-top:none;
+	text-decoration: none;
+	padding-top:10px;
+	padding-bottom: 10px;
+	margin-top:-10px;
+	margin-bottom:-8px;
+	font-size: 20px;
+	color:black;
+}
+#headerBttns a:hover{
+	background-color: rgba(0, 0, 0, 0.1);
+	color:black;
+}
+#gallery{
+	width: 85%;
+	min-width: 730px;
+	margin-right: auto;
+	margin-left: auto;
+	padding:0px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+#gallery img{
+	max-width:100%;
+	min-width: 400px;
+	max-height: 700px;
+	margin:5px;
+	padding:0px;
+	overflow: hidden;
+}
+#gallery img:hover, .imageBox img:hover{
+	cursor: pointer;
+}
+
+/*Antique detail pages*/
+.imageBox img{
+	width: auto;
+	height: 500px;
+	margin:5px;
+	padding:0px;
+	overflow: hidden;
+}
+.spec{
+	width:550px;
+	border:1px solid black;
+	border-radius: 5px;
+	height:auto;
+	margin-right:50px;
+}
+.spec h4{
+	text-align:center;
+}
+.spec li{
+	margin-bottom: 10px
+}
+.antiqueDetails{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	width:100%;
+	height:auto;
+	margin-right: auto;
+	margin-left: auto;
+}
+.antiqueHeader{
+	display: flex;
+	flex-direction: row-reverse;
+	justify-content: flex-end;
+}
+.antiqueHeader button{
+	border-radius: 3px;
+	margin-left:10px;
+	margin-top:auto;
+	margin-bottom: auto;
+	height:30px;
+}
+.antiqueHeader h1{
+	margin-left:auto;
+	margin-right: auto;
+}
+.imageBox{
+	margin-left:50px;
+}
+.gallNav button{
+	width:40px;
+	height:40px;
+}
+.gallNav #b1{
+	background: url(https://liamebirge.github.io/AntiqueProj/Pictures/Icons/left.png);
+	background-repeat:no-repeat;
+    background-size:contain;
+}
+.gallNav #b2{
+	background: url(https://liamebirge.github.io/AntiqueProj/Pictures/Icons/right.png);
+	background-repeat:no-repeat;
+    background-size:contain;
+}
+.spec li a{
+	color:black;
+}
+.spec li a:hover{
+	text-decoration-color:red;
+	color:grey;
+}
+
+
+/*Main Page*/
+.aboutLink{
+	width:300px;
+	border:1px solid black;
+	border-radius: 5px;
+	display:flex;
+	justify-content: space-between;
+	flex-direction: column;
+	align-content: center;
+	text-align: center;
+	padding:5px;
+	margin:5px;
+}
+.aboutLink button{
+	width:200px;
+	align-self: center;
+}
+.whatIsAntique, .whyDigitize{
+	width:50%;
+	min-width: 300px;
+	border:1px solid black;
+	border-radius: 5px;
+	padding:5px;
+	margin:5px;
+}
+.whatIsAntique p::first-letter, .whyDigitize p::first-letter{
+	font-size: 200%;
+}
+
+
+/*About Page*/
+#about{
+	width:42%;
+	border:1px solid black;
+	border-radius: 5px;
+	margin:5px;
+	margin-left: auto;
+	margin-right: auto;
+}
+#about h2{
+	text-align: center;
+}
+#about p{
+	width:98%;
+	margin-left: auto;
+	margin-right: auto;
+	padding:5px;
+}
+footer#aboutFooter{
+	position: relative;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background-color: #efefef;
+	text-align: center;
+	height:50px;
+	min-width:580px; 
+	padding:1em;
+}
+#aboutFooter a{
+	width:50px;
+	height:50px;
+}
+.github{
+	width:50px;
+	height:50px;
+	background:url(Pictures/Icons/github1.png);
+	background-repeat: no-repeat;
+	background-size: 50px 50px;
+	margin:auto;
+	padding-top:20px;
+}
+.github:hover{
+	background:url(Pictures/Icons/github2.png);
+	background-size: 50px 50px;
+	background-repeat: no-repeat;
+	cursor: pointer;
+}
